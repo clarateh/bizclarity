@@ -47,7 +47,7 @@
       <span lang="en">One briefing, the right licensed specialists.</span>
       <span lang="zh">一次说清楚，对的持牌专业团队接手。</span>
     </p>
-    <a class="btn" href="#book" data-book="discovery"><span lang="en">Book a free 15-min call</span><span lang="zh">预约免费 15 分钟通话</span></a>
+    <a class="btn" href="#book"><span lang="en">Book a free 30-min preliminary assessment</span><span lang="zh">预约免费 30 分钟初步评估</span></a>
     <a class="btn ghost" href="#blindspots"><span lang="en">See the blind spots</span><span lang="zh">看看有哪些盲点</span></a>
   </div>
 </section>
@@ -57,39 +57,142 @@
   <div class="wrap">
     <div class="eyebrow"><span lang="en">What I cover</span><span lang="zh">关注领域</span></div>
     <h2><span lang="en">Four areas every owner should check</span><span lang="zh">每个老板都该检查的四件事</span></h2>
-    <div class="grid four" style="margin-top:28px">
-      <div class="card">
+    <p style="color:var(--muted);margin-top:-6px"><span lang="en">Tap an area to see what we look at.</span><span lang="zh">点击任一领域，看看我们会检查什么。</span></p>
+    <div class="grid four" style="margin-top:22px">
+      <button class="card pillar" data-pillar="control" aria-expanded="false" aria-controls="pillar-panel">
         <div class="num"><span lang="en">Control</span><span lang="zh">控制权</span></div>
         <ul>
           <li><span lang="en">Shareholders' agreement and deadlock</span><span lang="zh">股东协议与僵局</span></li>
           <li><span lang="en">Board seats, voting and reserved matters</span><span lang="zh">董事席位、投票权、保留事项</span></li>
           <li><span lang="en">What happens when partners fall out</span><span lang="zh">合伙人闹翻时怎么办</span></li>
         </ul>
-      </div>
-      <div class="card">
+        <span class="more"><span lang="en">What we look at →</span><span lang="zh">检查内容 →</span></span>
+      </button>
+      <button class="card pillar" data-pillar="continuity" aria-expanded="false" aria-controls="pillar-panel">
         <div class="num"><span lang="en">Continuity</span><span lang="zh">营运持续性</span></div>
         <ul>
           <li><span lang="en">If the owner or a key person is gone</span><span lang="zh">老板或关键人物不在时</span></li>
           <li><span lang="en">Your shares, your will and your executors</span><span lang="zh">股份、遗嘱与执行人</span></li>
           <li><span lang="en">Sole shareholder, sole director risk</span><span lang="zh">一人股东、一人董事的风险</span></li>
         </ul>
-      </div>
-      <div class="card">
+        <span class="more"><span lang="en">What we look at →</span><span lang="zh">检查内容 →</span></span>
+      </button>
+      <button class="card pillar" data-pillar="exit" aria-expanded="false" aria-controls="pillar-panel">
         <div class="num"><span lang="en">Handover / Exit</span><span lang="zh">接班 / 退出</span></div>
         <ul>
           <li><span lang="en">Succession to family or management</span><span lang="zh">交给家人或管理层接班</span></li>
           <li><span lang="en">Selling your shares cleanly</span><span lang="zh">干净地卖出股份</span></li>
           <li><span lang="en">Getting released from guarantees when you exit</span><span lang="zh">退出时解除担保</span></li>
         </ul>
-      </div>
-      <div class="card">
+        <span class="more"><span lang="en">What we look at →</span><span lang="zh">检查内容 →</span></span>
+      </button>
+      <button class="card pillar" data-pillar="assets" aria-expanded="false" aria-controls="pillar-panel">
         <div class="num"><span lang="en">Asset ringfencing</span><span lang="zh">个人资产隔离</span></div>
         <ul>
           <li><span lang="en">Personal guarantees: cap and scope</span><span lang="zh">个人担保：上限与范围</span></li>
           <li><span lang="en">Why late asset transfers get clawed back</span><span lang="zh">为什么临时转移的资产会被追回</span></li>
           <li><span lang="en">Trusts and asset planning, done early</span><span lang="zh">信托与资产规划，要趁早</span></li>
         </ul>
+        <span class="more"><span lang="en">What we look at →</span><span lang="zh">检查内容 →</span></span>
+      </button>
+    </div>
+
+    <div id="pillar-panel" class="pillar-panel" hidden>
+      <button class="close" aria-label="Close">×</button>
+
+      <div data-detail="control" hidden>
+        <h3><span lang="en">Control: who really decides?</span><span lang="zh">控制权：公司到底谁说了算？</span></h3>
+        <div class="cols">
+          <div>
+            <h4><span lang="en">What we look at</span><span lang="zh">我们会检查</span></h4>
+            <ul>
+              <li><span lang="en">Your shareholding and which decisions need a simple majority or a 75% special resolution</span><span lang="zh">股权结构，以及哪些决定需要过半数、哪些需要 75% 特别决议</span></li>
+              <li><span lang="en">Board composition: who appoints and removes directors</span><span lang="zh">董事会组成：谁能委任、撤换董事</span></li>
+              <li><span lang="en">Your shareholders' agreement (or the lack of one): deadlock, reserved matters, pre-emption, drag / tag-along</span><span lang="zh">股东协议（或者根本没有）：僵局机制、保留事项、优先购买权、领售 / 随售</span></li>
+              <li><span lang="en">Whether your constitution and your agreement actually match</span><span lang="zh">公司章程和股东协议是否互相配合</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4><span lang="en">Worth checking if</span><span lang="zh">如果你有这些情况，值得检查</span></h4>
+            <ul>
+              <li><span lang="en">You own 50-50 with a partner</span><span lang="zh">你和合伙人各持 50%</span></li>
+              <li><span lang="en">Family members hold shares with nothing in writing</span><span lang="zh">家人持股，但什么都没写下来</span></li>
+              <li><span lang="en">An investor or silent partner has come in</span><span lang="zh">有投资人或隐名合伙人加入</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
+
+      <div data-detail="continuity" hidden>
+        <h3><span lang="en">Continuity: what if you're not there tomorrow?</span><span lang="zh">营运持续性：如果明天你不在了？</span></h3>
+        <div class="cols">
+          <div>
+            <h4><span lang="en">What we look at</span><span lang="zh">我们会检查</span></h4>
+            <ul>
+              <li><span lang="en">Who can sign, run the bank accounts and pay salaries if you're incapacitated or pass away</span><span lang="zh">你失去能力或离世时，谁能签字、操作银行户口、发薪水</span></li>
+              <li><span lang="en">How your shares pass under your will: executors, the chain of executorship, transfer to your family</span><span lang="zh">股份如何依遗嘱转移：执行人、执行人链、转到家人名下</span></li>
+              <li><span lang="en">Sole shareholder / sole director gaps</span><span lang="zh">一人股东、一人董事的空窗</span></li>
+              <li><span lang="en">Key-person dependency, and how a buy-out would be funded</span><span lang="zh">对关键人物的依赖，以及股份收购的资金从哪里来</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4><span lang="en">Worth checking if</span><span lang="zh">如果你有这些情况，值得检查</span></h4>
+            <ul>
+              <li><span lang="en">You're the only director, or the only bank signatory</span><span lang="zh">你是唯一的董事或唯一的银行签署人</span></li>
+              <li><span lang="en">Your will doesn't mention your company shares, or names one executor</span><span lang="zh">遗嘱没提到公司股份，或只写了一个执行人</span></li>
+              <li><span lang="en">The business would stall without one person</span><span lang="zh">少了某一个人，生意就会停摆</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div data-detail="exit" hidden>
+        <h3><span lang="en">Handover / Exit: leaving on your terms</span><span lang="zh">接班 / 退出：按你的方式离开</span></h3>
+        <div class="cols">
+          <div>
+            <h4><span lang="en">What we look at</span><span lang="zh">我们会检查</span></h4>
+            <ul>
+              <li><span lang="en">Succession to family or management: timeline, roles, how the shares move</span><span lang="zh">交给家人或管理层：时间表、角色、股份如何转移</span></li>
+              <li><span lang="en">Readiness for a sale: valuation, records, due diligence, warranties you'd be asked to give</span><span lang="zh">出售前的准备：估值、记录、尽职调查、你要给的保证</span></li>
+              <li><span lang="en">Getting your personal guarantees released when you step away</span><span lang="zh">退出时，个人担保如何正式解除</span></li>
+              <li><span lang="en">Restrictions after you leave, such as non-competes</span><span lang="zh">离开后的限制，例如竞业条款</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4><span lang="en">Worth checking if</span><span lang="zh">如果你有这些情况，值得检查</span></h4>
+            <ul>
+              <li><span lang="en">You'd like to step back in the next 3-5 years</span><span lang="zh">你打算在 3 到 5 年内退下来</span></li>
+              <li><span lang="en">A buyer or investor has approached you</span><span lang="zh">有买家或投资人来接触你</span></li>
+              <li><span lang="en">Your children may or may not want to take over</span><span lang="zh">孩子不一定想接班</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div data-detail="assets" hidden>
+        <h3><span lang="en">Asset ringfencing: keeping the business's risk off your family</span><span lang="zh">个人资产隔离：别让公司的风险落到家人身上</span></h3>
+        <div class="cols">
+          <div>
+            <h4><span lang="en">What we look at</span><span lang="zh">我们会检查</span></h4>
+            <ul>
+              <li><span lang="en">Every personal guarantee you've signed: amount, cap, scope, joint and several, continuing</span><span lang="zh">你签过的每一份个人担保：金额、上限、范围、是否连带、是否持续有效</span></li>
+              <li><span lang="en">Which assets sit in your name and which in the company's</span><span lang="zh">哪些资产在你名下，哪些在公司名下</span></li>
+              <li><span lang="en">Why transfers made close to trouble can be clawed back, and what timing means</span><span lang="zh">为什么出事前后转移的资产会被追回，时间点为什么重要</span></li>
+              <li><span lang="en">Trusts, nominations and structures, set up early and for genuine reasons</span><span lang="zh">信托、受益人指定与架构安排：要趁早，而且要有合理的理由</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4><span lang="en">Worth checking if</span><span lang="zh">如果你有这些情况，值得检查</span></h4>
+            <ul>
+              <li><span lang="en">You've signed guarantees for company loans or trade credit</span><span lang="zh">你为公司贷款或供应商赊账签过担保</span></li>
+              <li><span lang="en">Your home is in your own name</span><span lang="zh">你的房子在自己名下</span></li>
+              <li><span lang="en">You're thinking of moving assets to family</span><span lang="zh">你正在考虑把资产转给家人</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a class="btn" href="#book" style="margin-top:8px"><span lang="en">Book a free 30-min preliminary assessment</span><span lang="zh">预约免费 30 分钟初步评估</span></a>
     </div>
   </div>
 </section>
@@ -143,18 +246,22 @@
   <div class="wrap">
     <div class="eyebrow"><span lang="en">How it works</span><span lang="zh">怎么进行</span></div>
     <h2><span lang="en">From "I'm not sure" to a clear plan</span><span lang="zh">从"不太确定"到清楚的计划</span></h2>
-    <div class="grid three steps" style="margin-top:40px">
+    <div class="grid steps four" style="margin-top:40px">
       <div class="card">
-        <h3><span lang="en">Free 15-min call</span><span lang="zh">免费 15 分钟通话</span></h3>
-        <p><span lang="en">Tell me about your business and what keeps you up at night. I'll tell you honestly whether an assessment is worth it.</span><span lang="zh">跟我说说你的生意，和你最担心的事。值不值得做评估，我会坦白告诉你。</span></p>
+        <h3><span lang="en">Free 30-min preliminary owner's risk assessment</span><span lang="zh">免费 30 分钟企业主风险初步评估</span></h3>
+        <p><span lang="en">First, I listen: what's worrying you, and how your business and family are set up. Then we go through control, continuity, handover / exit and personal assets, spot where your blind spots are likely to be, and agree what information I need.</span><span lang="zh">先听你说：你最担心什么、公司和家庭是怎么安排的。再一起过一遍控制权、营运持续性、接班 / 退出和个人资产，找出盲点可能在哪里，并确定我需要哪些资料。</span></p>
       </div>
       <div class="card">
-        <h3><span lang="en">45-min owner's risk assessment</span><span lang="zh">45 分钟企业主风险评估</span></h3>
-        <p><span lang="en">We go through your blind spots in control, continuity, handover / exit and personal assets, rank them, and list what to fix first.</span><span lang="zh">一起找出你在控制权、营运持续性、接班 / 退出和个人资产上的盲点，排出轻重，列出先处理什么。</span></p>
+        <h3><span lang="en">Review of your information</span><span lang="zh">审阅你的资料</span></h3>
+        <p><span lang="en">You send what's needed, e.g. your constitution, shareholders' agreement, guarantees or will. I review it before we meet again, in confidence.</span><span lang="zh">你提供所需资料，例如公司章程、股东协议、担保文件或遗嘱。我会在下次会谈前审阅，全程保密。</span></p>
       </div>
       <div class="card">
-        <h3><span lang="en">Plan and follow-up</span><span lang="zh">计划与跟进</span></h3>
-        <p><span lang="en">You get a short written action list. Where specialist work is needed, I brief the right licensed partners on your facts.</span><span lang="zh">你会拿到一份简短的行动清单。需要专业处理的部分，我会把你的情况交代给合适的持牌专业人士。</span></p>
+        <h3><span lang="en">1-hour findings &amp; action plan</span><span lang="zh">1 小时评估结果与行动方案</span></h3>
+        <p><span lang="en">We walk through what I found, ranked by risk, with the options for each. You leave with a short written action list: what to fix first, and why. You decide what happens next.</span><span lang="zh">一起过一遍我的发现，按风险排出轻重，以及每一项的处理选项。你会拿到一份简短的书面行动清单：先处理什么、为什么。下一步由你决定。</span></p>
+      </div>
+      <div class="card">
+        <h3><span lang="en">The right specialists</span><span lang="zh">对的专业团队</span></h3>
+        <p><span lang="en">Where specialist work is needed, I brief the right licensed partners on your facts and stay involved until it's done.</span><span lang="zh">需要专业处理的部分，我会把你的情况交代给合适的持牌专业人士，并一路跟进到完成。</span></p>
       </div>
     </div>
   </div>
@@ -187,22 +294,12 @@
 <section id="book" class="book">
   <div class="wrap">
     <div class="eyebrow"><span lang="en">Book a session</span><span lang="zh">预约</span></div>
-    <h2><span lang="en">Choose a session and a time</span><span lang="zh">选择会谈类型和时间</span></h2>
+    <h2><span lang="en">Pick a time that suits you</span><span lang="zh">选一个你方便的时间</span></h2>
     <div class="tabs" role="tablist">
-      <button class="tab" role="tab" data-session="discovery" aria-selected="true">
-        <strong><span lang="en">Discovery call</span><span lang="zh">初步了解</span></strong>
-        <span class="mins">15 min · <span lang="en">Free</span><span lang="zh">免费</span></span>
-        <small><span lang="en">A quick chat to see where your blind spots might be.</span><span lang="zh">快速聊聊，看看你的盲点可能在哪里。</span></small>
-      </button>
-      <button class="tab" role="tab" data-session="review" aria-selected="false">
-        <strong><span lang="en">Owner's risk assessment</span><span lang="zh">企业主风险评估</span></strong>
-        <span class="mins">45 min</span>
-        <small><span lang="en">Control · continuity · handover / exit · personal assets</span><span lang="zh">控制权 · 营运持续性 · 接班 / 退出 · 个人资产隔离</span></small>
-      </button>
-      <button class="tab" role="tab" data-session="followup" aria-selected="false">
-        <strong><span lang="en">Follow-up</span><span lang="zh">跟进</span></strong>
-        <span class="mins">30 min</span>
-        <small><span lang="en">For existing clients: progress check on the action list.</span><span lang="zh">给已做过评估的客户：跟进行动清单的进度。</span></small>
+      <button class="tab" role="tab" data-session="assessment" aria-selected="true">
+        <strong><span lang="en">Owner's risk assessment: preliminary</span><span lang="zh">企业主风险评估：初步评估</span></strong>
+        <span class="mins">30 min · <span lang="en">Free</span><span lang="zh">免费</span></span>
+        <small><span lang="en">Control · continuity · handover / exit · personal assets. Online on Zoom, in English or Mandarin.</span><span lang="zh">控制权 · 营运持续性 · 接班 / 退出 · 个人资产隔离。线上 Zoom 进行，英文或华语。</span></small>
       </button>
     </div>
     <div id="cal-box">
@@ -248,7 +345,7 @@
     </details>
     <details>
       <summary><span lang="en">Online or in person?</span><span lang="zh">线上还是见面？</span></summary>
-      <p><span lang="en">Online by default, on Zoom. In-person meetings in the Klang Valley can be arranged after the discovery call.</span><span lang="zh">默认线上，使用 Zoom。巴生谷一带可在初步通话后安排见面。</span></p>
+      <p><span lang="en">Online by default, on Zoom. In-person meetings in the Klang Valley can be arranged after the preliminary assessment.</span><span lang="zh">默认线上，使用 Zoom。巴生谷一带可在初步评估之后安排见面。</span></p>
     </details>
     <details>
       <summary><span lang="en">Which language?</span><span lang="zh">用什么语言？</span></summary>

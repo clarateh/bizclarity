@@ -138,3 +138,22 @@ footer .disc { margin-top: 14px; font-size: .82rem; color: #8f97aa; }
 .partners { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 18px; }
 .partners > span { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; font-weight: 600; }
 .fine { color: var(--muted); font-size: .92rem; max-width: 760px; }
+
+/* clickable pillars + detail panel */
+.pillar { text-align: left; font: inherit; color: inherit; cursor: pointer; transition: border-color .2s, transform .2s; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; }
+.pillar:hover { border-color: var(--gold); transform: translateY(-2px); }
+.pillar[aria-expanded="true"] { border-color: var(--gold); background: var(--gold-soft); }
+.pillar .more { display: inline-block; margin-top: auto; padding-top: 12px; color: var(--navy); font-weight: 700; font-size: .92rem; }
+.pillar-panel { position: relative; margin-top: 22px; background: #fff; border: 2px solid var(--gold); border-radius: var(--radius); padding: 28px; }
+.pillar-panel .close { position: absolute; top: 10px; right: 14px; border: 0; background: none; font-size: 1.8rem; line-height: 1; cursor: pointer; color: var(--muted); }
+.pillar-panel .cols { display: grid; grid-template-columns: 3fr 2fr; gap: 28px; }
+.pillar-panel h4 { margin: 0 0 .4em; color: var(--gold); font-size: .95rem; text-transform: uppercase; letter-spacing: .05em; }
+.pillar-panel ul { padding-left: 1.1em; margin: 0 0 1em; }
+.pillar-panel li { margin-bottom: .45em; }
+@media (max-width: 760px) { .pillar-panel .cols { grid-template-columns: 1fr; } }
+
+/* five-step flow */
+.grid.steps.four { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px 20px; }
+.grid.steps.four .card { padding: 34px 20px 22px; }
+.grid.steps.four h3 { font-size: 1.05rem; }
+.grid.steps.four p { font-size: .95rem; color: var(--muted); }

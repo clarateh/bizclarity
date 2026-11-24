@@ -8,11 +8,9 @@
    ========================================================================== */
 const CAL_USERNAME = "clara-tjy";   // cal.com/clara-tjy
 const SESSIONS = {
-  discovery: "discovery-call",      // 15 min, free
-  review: "blind-spot-review",      // 45 min - "Owner's risk assessment" (slug kept)
-  followup: "follow-up",            // 30 min
+  assessment: "blind-spot-review",  // 30 min "Owner's risk assessment: preliminary" (slug kept from the first setup)
 };
-const DEFAULT_SESSION = "discovery";
+const DEFAULT_SESSION = "assessment";
 
 /* ---------------------------------------------------------------- language */
 const LANG_KEY = "site-lang";
@@ -75,8 +73,30 @@ function initBooking() {
   showSession(DEFAULT_SESSION);
 }
 
+/* ---------------------------------------------------------------- four pillars: click a card to open its detail */
+function initPillars() {
+  const panel = document.getElementById("pillar-panel");
+  if (!panel) return;
+  const cards = document.querySelectorAll(".pillar");
+  function open(key) {
+    const same = !panel.hidden && panel.dataset.open === key;
+    cards.forEach((c) => c.setAttribute("aria-expanded", String(!same && c.dataset.pillar === key)));
+    if (same) { panel.hidden = true; panel.dataset.open = ""; return; }
+    panel.querySelectorAll("[data-detail]").forEach((d) => (d.hidden = d.dataset.detail !== key));
+    panel.hidden = false;
+    panel.dataset.open = key;
+    panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+  cards.forEach((c) => c.addEventListener("click", () => open(c.dataset.pillar)));
+  panel.querySelector(".close").addEventListener("click", () => {
+    panel.hidden = true; panel.dataset.open = "";
+    cards.forEach((c) => c.setAttribute("aria-expanded", "false"));
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initLang();
+  initPillars();
   initBooking();
   const y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();

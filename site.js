@@ -9,7 +9,7 @@
 const CAL_USERNAME = "clara-tjy";   // cal.com/clara-tjy
 const SESSIONS = {
   discovery: "discovery-call",      // 15 min, free
-  review: "blind-spot-review",      // 45 min
+  review: "blind-spot-review",      // 45 min - "Owner's risk assessment" (slug kept)
   followup: "follow-up",            // 30 min
 };
 const DEFAULT_SESSION = "discovery";

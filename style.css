@@ -157,3 +157,94 @@ footer .disc { margin-top: 14px; font-size: .82rem; color: #8f97aa; }
 .grid.steps.four .card { padding: 34px 20px 22px; }
 .grid.steps.four h3 { font-size: 1.05rem; }
 .grid.steps.four p { font-size: .95rem; color: var(--muted); }
+
+/* channel section: collapsed at the end */
+details.channel { background: transparent; border: 0; padding: 0; }
+details.channel > summary { font-family: "Noto Serif SC", serif; font-size: 1.25rem; padding: 14px 0; color: var(--navy); }
+details.channel .grid { margin-top: 18px !important; }
+
+/* ============================================================ premium refresh (2026-11-24, "atas")
+   Cormorant Garamond display serif (Noto Serif SC for Chinese), light Inter body, hairline rules, square buttons */
+:root { --radius: 4px; --ink: #1c2230; --muted: #6a7182; --line: #e7e0d2; }
+body { font-weight: 300; line-height: 1.8; letter-spacing: .005em; }
+html[data-lang="zh"] body { font-family: "Noto Sans SC", "Inter", sans-serif; font-weight: 400; }
+h1, h2, h3, .brand, .card .num, .tab strong, details.channel > summary {
+  font-family: "Cormorant Garamond", "Noto Serif SC", serif; font-weight: 600; letter-spacing: -.005em;
+}
+h1 { font-size: clamp(2.4rem, 5.6vw, 4rem); line-height: 1.12; font-weight: 600; }
+h2 { font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 500; line-height: 1.15; }
+h3 { font-size: 1.35rem; font-weight: 600; }
+html[data-lang="zh"] h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.3; }
+html[data-lang="zh"] h2 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); line-height: 1.35; }
+section { padding: 104px 0; }
+
+/* eyebrow: tiny caps with a gold hairline */
+.eyebrow { display: flex; align-items: center; gap: 14px; font-size: .72rem; letter-spacing: .26em; font-weight: 500; margin-bottom: 1.1em; }
+.eyebrow::before { content: ""; width: 36px; height: 1px; background: var(--gold); }
+
+/* header */
+.top { background: rgba(16, 26, 49, .97); border-bottom: 1px solid rgba(201, 161, 74, .25); }
+.top .wrap { height: 72px; }
+.brand { font-size: 1.45rem; letter-spacing: .02em; }
+.nav a { font-size: .74rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 500; }
+html[data-lang="zh"] .nav a { letter-spacing: .1em; font-size: .88rem; }
+.lang-btn { border-radius: 2px; font-size: .74rem; letter-spacing: .14em; padding: 7px 14px; }
+
+/* hero */
+.hero { background: radial-gradient(120% 90% at 85% 0%, #243660 0%, #14213d 55%, #0f1930 100%); padding: 120px 0 128px; position: relative; }
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: .6; }
+.hero h1 em { font-style: italic; font-weight: 500; }
+html[data-lang="zh"] .hero h1 em { font-style: normal; }
+.hero .lead { font-size: 1.12rem; line-height: 1.85; color: #c9cfdd; max-width: 620px; }
+.creds { gap: 0; margin: 34px 0 30px; }
+.creds span { border: 0; border-radius: 0; padding: 0 16px; font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-soft); border-left: 1px solid rgba(201, 161, 74, .45); line-height: 1.2; margin: 6px 0; }
+.creds span:first-child { padding-left: 0; border-left: 0; }
+html[data-lang="zh"] .creds span { letter-spacing: .08em; font-size: .85rem; }
+
+/* buttons: square, small caps */
+.btn { border-radius: 2px; padding: 16px 30px; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; transition: background .25s, color .25s; }
+html[data-lang="zh"] .btn { letter-spacing: .1em; font-size: .92rem; }
+.btn:hover { filter: none; background: #d9b665; }
+.btn.ghost { border: 1px solid rgba(255, 255, 255, .55); }
+.btn.ghost:hover { background: #fff; color: var(--navy); }
+
+/* cards: hairline, soft shadow */
+.card { border-radius: var(--radius); border: 1px solid var(--line); padding: 32px 30px; box-shadow: 0 1px 2px rgba(20, 33, 61, .04), 0 12px 30px -18px rgba(20, 33, 61, .18); }
+.card .num { font-size: 1.5rem; color: var(--navy); margin-bottom: 10px; padding-bottom: 12px; border-bottom: 1px solid var(--gold); }
+html[data-lang="zh"] .card .num { font-size: 1.25rem; }
+.card ul { color: var(--muted); font-size: .96rem; }
+.pillar:hover { transform: none; box-shadow: 0 18px 40px -20px rgba(20, 33, 61, .35); }
+.pillar .more { font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+html[data-lang="zh"] .pillar .more { letter-spacing: .08em; font-size: .85rem; }
+.pillar-panel { border: 1px solid var(--gold); border-radius: var(--radius); padding: 40px; box-shadow: 0 24px 50px -30px rgba(20, 33, 61, .35); }
+.pillar-panel h3 { font-size: 1.7rem; font-weight: 500; margin-bottom: 1em; }
+.pillar-panel h4 { font-family: "Inter", "Noto Sans SC", sans-serif; font-size: .7rem; letter-spacing: .22em; font-weight: 600; }
+.pillar-panel li { color: #3d4454; }
+
+/* steps: thin gold ring numerals */
+.steps .card::before { background: var(--cream); color: var(--gold); border: 1px solid var(--gold); font-family: "Cormorant Garamond", serif; font-weight: 600; font-size: 1.15rem; width: 40px; height: 40px; top: -20px; }
+.grid.steps.four p { line-height: 1.75; }
+
+/* partners: hairline list instead of pills */
+.partners { gap: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 6px 0; }
+.partners > span { background: none; border: 0; border-radius: 0; padding: 12px 22px 12px 0; margin-right: 22px; font-weight: 500; font-size: .95rem; border-right: 1px solid var(--line); }
+.partners > span:last-child { border-right: 0; }
+
+/* booking tab + faq */
+.tab { border-radius: var(--radius); border-width: 1px; }
+.tab[aria-selected="true"] { background: #fff; border-color: var(--gold); box-shadow: inset 3px 0 0 var(--gold); }
+.tab strong { font-size: 1.35rem; }
+#cal-box { border-radius: var(--radius); }
+details { border-radius: var(--radius); padding: 20px 24px; }
+summary { font-weight: 500; }
+
+/* about photo */
+.about .photo { border-width: 1px; padding: 6px; background: #fff; }
+
+/* footer */
+footer { background: #0f1930; border-top: 1px solid rgba(201, 161, 74, .35); }
+/* refresh fixes */
+h1, h2, h3, .brand, .card .num, .tab strong, .steps .card::before { font-variant-numeric: lining-nums; font-feature-settings: "lnum" 1; }
+.grid.steps.four h3 { font-size: 1.4rem; line-height: 1.25; }
+html[data-lang="zh"] .grid.steps.four h3 { font-size: 1.15rem; }
+.steps .card::before { font-size: 1.3rem; }

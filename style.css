@@ -274,3 +274,8 @@ html[data-lang="zh"] .cta-note { letter-spacing: .06em; font-size: .9rem; text-t
 .creds { column-gap: 26px; row-gap: 10px; }
 .creds span { border-left: 0 !important; padding: 0 !important; margin: 0; display: inline-flex; align-items: center; gap: 10px; }
 .creds span::before { content: ""; width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); flex: none; }
+
+footer .social { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; margin-bottom: 14px; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; }
+footer .social > span { color: #8f97aa; }
+footer .social a { text-decoration: none; font-weight: 600; }
+footer .social a:hover { color: #fff; }

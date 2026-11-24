@@ -248,3 +248,22 @@ h1, h2, h3, .brand, .card .num, .tab strong, .steps .card::before { font-variant
 .grid.steps.four h3 { font-size: 1.4rem; line-height: 1.25; }
 html[data-lang="zh"] .grid.steps.four h3 { font-size: 1.15rem; }
 .steps .card::before { font-size: 1.3rem; }
+
+/* readability pass (2026-11-24): sturdier serif, normal-weight body, darker text */
+:root { --ink: #161b26; --muted: #3f4656; }
+body { font-weight: 400; color: var(--ink); }
+h1, h2, h3, .brand, .card .num, .tab strong, details.channel > summary { font-family: "Playfair Display", "Noto Serif SC", serif; font-weight: 600; }
+h2 { font-weight: 600; }
+.pillar-panel h3 { font-weight: 600; }
+.steps .card::before { font-family: "Playfair Display", serif; }
+.card ul, .grid.steps.four p, .fine, .hero .lead { font-weight: 400; }
+.card ul, .grid.steps.four p { color: var(--muted); }
+.pillar-panel li { color: var(--ink); }
+.eyebrow { color: #a87d2c; font-weight: 600; font-size: .76rem; }
+.pillar .more { color: #a87d2c; }
+.hero .lead { color: #e3e7f0; }
+.creds span { color: #f3e7c9; font-size: .8rem; font-weight: 500; }
+.nav a { color: #eef1f7; font-weight: 600; }
+footer { color: #c9cfdc; }
+footer .disc { color: #aab2c4; }
+html[data-lang="zh"] .creds span { font-size: .9rem; }

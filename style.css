@@ -270,3 +270,7 @@ html[data-lang="zh"] .creds span { font-size: .9rem; }
 
 .cta-note { margin: 14px 0 0; font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; color: #c9cfdc; }
 html[data-lang="zh"] .cta-note { letter-spacing: .06em; font-size: .9rem; text-transform: none; }
+/* credentials: gold dot before every item, so a wrapped line still starts cleanly */
+.creds { column-gap: 26px; row-gap: 10px; }
+.creds span { border-left: 0 !important; padding: 0 !important; margin: 0; display: inline-flex; align-items: center; gap: 10px; }
+.creds span::before { content: ""; width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); flex: none; }
